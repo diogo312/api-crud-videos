@@ -47,5 +47,6 @@ server.delete("/videos/:id", async (req, rep) => {
 })
 
 server.listen({
+    host: "0.0.0.0",
     port: procces.env.PORT ?? 3333
 })
